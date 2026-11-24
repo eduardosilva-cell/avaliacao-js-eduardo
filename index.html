@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gerador de Pedidos</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="container">
+<h1>Gerador de Pedidos</h1>
+<form id="form-pedido">
+<label for="cliente">Nome do cliente</label>
+<input type="text" id="cliente">
+<label for="cpf">CPF</label>
+<input type="text" id="cpf" placeholder="000.000.000-00">
+<label for="produto">Produto</label>
+<input type="text" id="produto">
+<label for="preco">Preço unitário</label>
+<input type="text" id="preco" placeholder="R$ 34,99">
+<label for="quantidade">Quantidade</label>
+<input type="number" id="quantidade">
+<button type="submit" id="btn-gerar">Gerar pedido</button>
+</form>
+<p id="erro" class="erro"></p>
+<section id="resultado" class="resultado"></section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
